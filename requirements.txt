@@ -1,0 +1,25 @@
+# Core RAG runtime
+chromadb>=1.5,<2
+langchain-chroma>=1.1,<2
+langchain-community>=0.4,<1
+langchain-groq>=1.1
+langchain-huggingface>=1.2
+langchain-openai>=1.6
+langchain-text-splitters>=1.1
+
+# Embeddings (sentence-transformers downloads intfloat/e5-base-v2 on first use)
+sentence-transformers>=4
+torch>=2
+
+# Document loading (PyPDFLoader)
+pypdf>=5
+
+# Env configuration
+python-dotenv>=1.0
+
+# API / web UI backend
+flask>=3.0
+flask-cors>=4
+
+# Demo / synthetic-lecture generator (scripts/)
+fpdf>=2.7

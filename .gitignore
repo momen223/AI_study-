@@ -1,0 +1,62 @@
+# ==========================================================
+# Secrets / credentials  -- NEVER commit
+# ==========================================================
+.env
+.env.local
+*.key
+ky.txt
+
+# ==========================================================
+# Python
+# ==========================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# ==========================================================
+# Vector stores / generated data (large binaries)
+# ==========================================================
+chroma_db/
+chroma_db_subjects/
+quiz_store/
+uploads/
+*.sqlite3
+data/vectorstore/
+# Demo corpus PDFs ARE committed (essential for out-of-the-box
+# store building), but ignore any other stray PDFs in data/.
+data/*.pdf
+!data/Lecture 1 - 3 Introductory Lecture.pdf
+!data/Lecture 4.pdf
+!data/Lecture 5 Types of Dimensions.pdf
+!data/Lecture - Machine Learning.pdf
+!data/Lecture - Computer Networks.pdf
+!data/Lecture - Database Systems.pdf
+
+# ==========================================================
+# Logs
+# ==========================================================
+*.log
+
+# ==========================================================
+# Node / frontend (build output)
+# ==========================================================
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ==========================================================
+# IDE / OS
+# ==========================================================
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+.ipynb_checkpoints/
